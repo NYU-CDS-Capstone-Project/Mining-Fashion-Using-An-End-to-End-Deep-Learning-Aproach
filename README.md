@@ -7,7 +7,7 @@ Currently, Hearst has a basic model which the model will search for pictures of 
 
 
 ## Dataset
-The PASCAL Visual Object Classification (PASCAL VOC) dataset is a well-known dataset for object detection, classification, segmentation of objects. There are around 10 000 images for training and validation containing bounding boxes with objects with 20 categories and we plan to filter indoor furnitures as our targed classes for Country Living Magazine (Heast).
+The PASCAL Visual Object Classification (PASCAL VOC) dataset is a well-known dataset for object detection, classification, segmentation of objects. There are around 10 000 images for training and validation containing bounding boxes with objects with 20 categories. And we plan to filter indoor furnitures as our targed classes for Country Living Magazine (Heast).
 
 ## Algorithms
 We will try several state-of-the art of object detection models including but not limited to"
