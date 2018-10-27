@@ -5,13 +5,14 @@ Hearst owns one of the world's largest pulisher of monthly magazines in multiple
 
 Currently, Hearst has a basic model which the model will search for pictures of similar objects when input an image of a particular object, and our task is to improve the model such that the model can find not only the object image, but also the images containing the object as an embedding. There are currently several models that can appropriate identify relevant objects in a single image and the localization of the objects. We will try to implement them with our selected data for one of the Heast Magazine topic and compare their performance and accuracy. Our work will be evaluated on Heast internal dataset with their basic model as baseline. 
 
+
+## Dataset
+The PASCAL Visual Object Classification (PASCAL VOC) dataset is a well-known dataset for object detection, classification, segmentation of objects. There are around 10 000 images for training and validation containing bounding boxes with objects with 20 categories and we plan to filter indoor furnitures as our targed classes for Country Living Magazine (Heast).
+
+## Algorithms
 We will try several state-of-the art of object detection models including but not limited to"
 
 1. R-CNN
 2. Fast R-CNN
 3. Yolo
 4. SSD
-
-## Dataset
-
-## Algorithms
