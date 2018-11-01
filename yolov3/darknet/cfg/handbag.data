@@ -1,0 +1,7 @@
+classes= 1
+train  = train.txt
+#valid  = coco_testdev
+valid = test.txt
+names = data/handbag.names
+backup = backup/
+
