@@ -6,11 +6,11 @@ performance and accuracy.
 
 We have met with two mentors, Rahel Jhirad and Hao Han, from Heast to discuss the project details and their 
 requirements. Unfortunately, we are unable to get Hearst internal data for model training. Open Images Dataset 
-V4 contains 1.9M images of 600 categories. We filter out around 2,100 handbag images from the Open Images Dataset
+V4 contains 1.9M images of 600 categories. We filtered out around 2,100 handbag images from the Open Images Dataset
 V4 with label. The sample dataset can be found in the sample_data folder. Next, we researched on several object 
 detection algorithms such as R-CNN, Fast R-CNN, Yolo and SSD. We wish to try those algorithms with a subsample data.
 Since each algorithms have their own structure, we need to convert data annotations to an acceptable format for each
-model. Currently, we have done data preprocessing for SSD and trained in a sub sample set. And we are now working 
+model. We have done data preprocessing for SSD and trained on a sub sample set, and currently we are working 
 on YOLO. Finally, we will run all algorithms on full handbag dataset, construct a system that records the performance 
 and evaluation score and test the best model on Hearst Handbag dataset. If we have enough time, we will construct a 
 handbag brand detection model for Heast.
