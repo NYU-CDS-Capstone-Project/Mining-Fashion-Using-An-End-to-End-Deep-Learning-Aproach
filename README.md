@@ -37,7 +37,7 @@ Second Stage: try different algorithms on sub sample with correct input format.
   - [ ] train bounding box using R-CNN
 - [ ] Fast R-CNN
   - [ ] preprocessing our handbag dataset to an acceptable format
-  - [ ]train bounding box using Fast R-CNN
+  - [ ] train bounding box using Fast R-CNN
   
 Third Stage: 
 - [ ] Run all algorithms on full handbag dataset and construct a system that records the performance and evaluation score.
