@@ -22,28 +22,28 @@ and our analysis criteria will be on their performance and accuracy.
 
 ## To Do List:
 Frist Stage: Dataset and Research
-- [x] Filtered out Handbag/ Handbag embedded images from the Open Images Dataset where there are total 600 categories.
+- [x] Filtered out Handbag/ Handbag embedded images from the Open Images Dataset where there are total categories in total.
 - [x] Explored potential algorithems for object detection: including models such as R-CNN, Fast R-CNN, Yolo, SSD.
 
 Second Stage: try different algorithms on sub sample with correct input format.
 - [x] SSD:
-  - [x] preprocessing our handbag dataset to a acceptable format for SSD model
-  - [x] train bounding box on SSD model
+  - [x] preprocessing our handbag dataset to an acceptable format for SSD model
+  - [x] train bounding box using SSD model
 - [ ] YOLO:
-  - [ ] preprocessing our handbag dataset to a acceptable format to <object-class> <x> <y> <width> <height>
-  - [ ] train bounding box on YOLO
+  - [ ] preprocessing our handbag dataset to an acceptable format to <object-class> <x> <y> <width> <height>
+  - [ ] train bounding box using YOLO
 - [ ] R-CNN:
-  - [ ] preprocessing our handbag dataset to a acceptable format
-  - [ ] train bounding box on R-CNN
+  - [ ] preprocessing our handbag dataset to an acceptable format
+  - [ ] train bounding box using R-CNN
 - [ ] Fast R-CNN
-  - [ ] preprocessing our handbag dataset to a acceptable format
-  - [ ]train bounding box on Fast R-CNN
+  - [ ] preprocessing our handbag dataset to an acceptable format
+  - [ ]train bounding box using Fast R-CNN
   
 Third Stage: 
 - [ ] Run all algorithms on full handbag dataset and construct a system that records the performance and evaluation score.
 
 Fourth Stage:
-- [ ] Test the best model on Heast Handbag dataset.
+- [ ] Test the best model on Hearst Handbag dataset.
 
 Fifth Stage (optional):
 - [ ] Construct a handbag brand detection model.
