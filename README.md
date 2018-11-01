@@ -7,7 +7,8 @@ Currently, Hearst has a basic model which the model will search for pictures of 
 
 
 ## Dataset
-The PASCAL Visual Object Classification (PASCAL VOC) dataset is a well-known dataset for object detection, classification, segmentation of objects. There are around 10 000 images for training and validation containing bounding boxes with objects with 20 categories. And we plan to filter indoor furnitures as our targed classes for Country Living Magazine (Heast).
+The Open Images Dataset is a well-known dataset for object detection, classification, segmentation of objects. The newest version V4 is realeased on 30th April 2018 with 15.4M bounding-boxes for 600 categories on 1.9M images, making it the largest existing dataset with object location annotations. And we plan to filter handbag images as our targed classes for Heast fashion magazines.
+
 
 ## Algorithms
 We will try several state-of-the art of object detection models including but not limited to:
@@ -18,3 +19,32 @@ We will try several state-of-the art of object detection models including but no
 4. SSD
 
 and our analysis criteria will be on their performance and accuracy. 
+
+## To Do List:
+Frist Stage: Dataset and Research
+- [x] Filtered out Handbag/ Handbag embedded images from the Open Images Dataset where there are total 600 categories.
+- [x] Explored potential algorithems for object detection: including models such as R-CNN, Fast R-CNN, Yolo, SSD.
+
+Second Stage: try different algorithms on sub sample with correct input format.
+- [x] SSD:
+  - [x] preprocessing our handbag dataset to a acceptable format for SSD model
+  - [x] train bounding box on SSD model
+- [ ] YOLO:
+  - [ ] preprocessing our handbag dataset to a acceptable format to <object-class> <x> <y> <width> <height>
+  - [ ] train bounding box on YOLO
+- [ ] R-CNN:
+  - [ ] preprocessing our handbag dataset to a acceptable format
+  - [ ] train bounding box on R-CNN
+- [ ] Fast R-CNN
+  - [ ] preprocessing our handbag dataset to a acceptable format
+  - [ ]train bounding box on Fast R-CNN
+  
+Third Stage: 
+- [ ] Run all algorithms on full handbag dataset and construct a system that records the performance and evaluation score.
+
+Fourth Stage:
+- [ ] Test the best model on Heast Handbag dataset.
+
+Fifth Stage (optional):
+- [ ] Construct a handbag brand detection model.
+
