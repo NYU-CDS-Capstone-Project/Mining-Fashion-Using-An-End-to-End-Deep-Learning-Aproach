@@ -1,3 +1,4 @@
+# set system path and import libraries
 import sys
 sys.path.append('/home/rw2268/1006/detection-pytorch/utils/')
 sys.path.append('/home/rw2268/1006/detection-pytorch/')
@@ -12,6 +13,7 @@ from ssd.ssd300 import build_ssd
 from ssd.utils_ssd.multiloss import MultiBoxLoss
 from utils_train import weights_init, adjust_learning_rate
 
+# load dataset
 use_cv2 = importlib.util.find_spec('cv2') is not None
 if use_cv2:
     from dataset.voc0712_cv import VOCDetection, AnnotationTransform, detection_collate
@@ -24,6 +26,7 @@ else:
 if not os.path.exists(cfg.save_folder):
     os.mkdir(cfg.save_folder)
 
+#build ssd model
 net = build_ssd('train')
 if cfg.resume:
     print('Resuming training, loading {}...'.format(cfg.resume))
@@ -40,6 +43,7 @@ if not cfg.resume:
     net.loc.apply(weights_init)
     net.conf.apply(weights_init)
 
+# set up training configuration
 optimizer = optim.SGD(net.parameters(), lr=cfg.lr,
                       momentum=cfg.momentum, weight_decay=cfg.weight_decay)
 
@@ -63,7 +67,7 @@ images = torch.randn((cfg.batch_size, 3, 300, 300), requires_grad=True)
 if cfg.cuda:
     net = net.cuda()
     images = images.cuda()
-
+# train model
 for epoch in range(cfg.epoch_num):
     if epoch in cfg.stepvalues:
         step_index += 1
