@@ -29,9 +29,9 @@ Second Stage: try different algorithms on sub sample with correct input format.
 - [x] SSD:
   - [x] preprocessing our handbag dataset to an acceptable format for SSD model
   - [x] train bounding box using SSD model
-- [ ] YOLO:
+- [x] YOLO:
   - [x] preprocessing our handbag dataset to an acceptable format to <object-class> <x> <y> <width> <height>
-  - [ ] train bounding box using YOLO
+  - [x] train bounding box using YOLO
 - [ ] R-CNN:
   - [ ] preprocessing our handbag dataset to an acceptable format
   - [ ] train bounding box using R-CNN
