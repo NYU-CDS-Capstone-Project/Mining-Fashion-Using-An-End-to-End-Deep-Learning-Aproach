@@ -1,4 +1,4 @@
-# Object detection using deep learning with OpenCV and Python 
+# Object detection using pre-trained yolov3 with OpenCV 
 
 OpenCV `dnn` module supports running inference on pre-trained deep learning models from popular frameworks like Caffe, Torch and TensorFlow. 
 
