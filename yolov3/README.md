@@ -2,42 +2,35 @@
 
 OpenCV `dnn` module supports running inference on pre-trained deep learning models from popular frameworks like Caffe, Torch and TensorFlow. 
 
-When it comes to object detection, popular detection frameworks are
- * YOLO
- * SSD
- * Faster R-CNN
- 
- Support for running YOLO/DarkNet has been added to OpenCV dnn module recently. 
- 
+Support for running YOLO/DarkNet has been added to OpenCV dnn module recently. 
+
  ## Dependencies
   * opencv
   * numpy
   
 `pip install numpy opencv-python`
 
-**Note: Python 2.x is not supported**
-
  ## YOLO (You Only Look Once)
  
- Download the pre-trained YOLO v3 weights file from this [link](https://pjreddie.com/media/files/yolov3.weights) and place it in the current directory or you can directly download to the current directory in terminal using
+ We have less configuration of GPU(less then 2GB GPU) so we use a relatively small model: tiny-yolo.
  
- `$ wget https://pjreddie.com/media/files/yolov3.weights`
+ After training the yolo model on about 2000 handbag images for 5000 epochs, we have the pre-trained weights file: handbag-tiny_5000.weights. Place it in the current directory.
  
- Provided all the files are in the current directory, below command will apply object detection on the input image `dog.jpg`.
+ All the files are in the current directory, command below will apply object detection on the input image `bag.jpg`.
  
- `$ python yolo_opencv.py --image dog.jpg --config yolov3.cfg --weights yolov3.weights --classes yolov3.txt`
+ `$ python detect.py --image bag.jpg --config handbag-tiny.cfg --weights handbag-tiny_5000.weights --classes handbag.names`
  
  
  **Command format** 
  
  _$ python yolo_opencv.py --image /path/to/input/image --config /path/to/config/file --weights /path/to/weights/file --classes /path/to/classes/file_
  
- Checkout the [blog post](http://www.arunponnusamy.com/yolo-object-detection-opencv-python.html) to learn more.
+ ### sample input:
+ ![](bag.jpg)
+ 
  
  ### sample output :
  ![](object-detection.jpg)
  
-Checkout the object detection implementation available in [cvlib](http:cvlib.net) which enables detecting common objects in the context through a single function call `detect_common_objects()`.
  
  
- (_SSD and Faster R-CNN examples will be added soon_)
