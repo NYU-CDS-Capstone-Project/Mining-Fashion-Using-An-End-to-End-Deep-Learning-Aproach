@@ -12,9 +12,9 @@ Support for running YOLO/DarkNet has been added to OpenCV dnn module recently.
 
  ## YOLO (You Only Look Once)
  
- We have less configuration of GPU(less then 2GB GPU) so we use a relatively small model: tiny-yolo.
+ We have less configuration of GPU(less then 2GB GPU) so we use a relatively small model: tiny-yolo. We made some changes to the original configuration file. e.g changing the filter numbers, batch sizes, classes and so on.
  
- After training the yolo model on about 2000 handbag images for 5000 epochs, we have the pre-trained weights file: handbag-tiny_5000.weights. Place it in the current directory.
+ After training the yolo model on about 2000 handbag images for 5000 epochs, we have the pre-trained weights file: handbag-tiny_5000.weights. 
  
  All the files are in the current directory, command below will apply object detection on the input image `bag.jpg`.
  
