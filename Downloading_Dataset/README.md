@@ -2,7 +2,9 @@
 
 This folder introduces how to downloading Handbag dataset from the Open Image Dataset
 
-#### Step 1: download OID dataset
+#### Step 1: 
+Download OID dataset
+
 ```ruby
 mkdir data
 wget http://storage.googleapis.com/openimages/2017_07/images_2017_07.tar.gz
