@@ -22,7 +22,7 @@ rm classes_2017_07.tar.gz
 ```
 
 #### Step 2: 
-Keeps on "/m/080hkjn", which indicates Handbag class in the file ../data/classes/classes-bbox-trainable.txt
+Keep only "/m/080hkjn" (indicates Handbag class) in the file ../data/classes/classes-bbox-trainable.txt
 
 #### Step 3:
 Run [Download_Handbag_Dataset.ipynb](https://github.com/NYU-CDS-Capstone-Project/Fashion_Apparel_Detection/blob/master/Downloading_Dataset/Download_Handbag_Dataset.ipynb)
