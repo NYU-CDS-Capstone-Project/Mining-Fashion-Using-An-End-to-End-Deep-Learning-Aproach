@@ -20,7 +20,7 @@ Next, we are going to build a CNN for brand recognition with initialized embeddi
 ## To Do List:
 Frist Stage: Dataset and Research
 - [x] Filtered out Handbag/ Handbag embedded images from the Open Images Dataset where there are total categories in total.
-- [x] Explored potential algorithems for object detection: including models such as R-CNN, Fast R-CNN, Yolo, SSD.
+- [x] Explored potential algorithems for object detection: including models such as Yolo, SSD.
 
 Second Stage: try different algorithms on sub sample with correct input format.
 - [x] SSD:
