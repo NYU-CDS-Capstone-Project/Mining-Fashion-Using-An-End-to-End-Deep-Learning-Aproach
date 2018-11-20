@@ -37,7 +37,7 @@ Fourth Stage:
 - [x] Build a handbag brand recognition model.
 
 Fifth Stage:
-- [ ] Construct the whole pipeline that is able to localize the handbag and then detect the speicifc brand.
+- [ ] Construct the whole pipeline which is able to localize the handbag in the input image and then detect the speicifc brand of the handbag.
 - [ ] Test the whole pipeline on Hearst Handbag dataset.
 
 
