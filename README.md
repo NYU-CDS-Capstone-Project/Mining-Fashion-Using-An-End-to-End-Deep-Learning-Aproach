@@ -1,5 +1,5 @@
 # NYU-Hearst
-# Handbag Localization and Brand Recognition
+# Handbag Detection and Brand Recognition
 ## Introduction
 Hearst owns one of the world's largest pulisher of monthly magazines in multiple fields including fashion, cars, composition, food, room decorations and etc. Objct Detection/Localization is important for such a big magazine publishr to search for similar images and locate particular objects. As computer vision has grown by leaps and bouds, we are now able to use it as a tool to scan images and accurately identify objects and components within them. Particularly, we are attempt to create a tool for Hearst that can scan images and videos for metadata to recognize objects in images that are then searchable within their explore function.
 
