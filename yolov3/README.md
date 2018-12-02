@@ -20,6 +20,7 @@ Support for running YOLO/DarkNet has been added to OpenCV dnn module recently.
  
  `$ python detect.py --image bag.jpg --config handbag-tiny.cfg --weights handbag-tiny_5000.weights --classes handbag.names`
  
+ `detectandcut.py` helps cut out the bounding box from an image, which is ready for further classification.
  
  **Command format** 
  
@@ -32,5 +33,8 @@ Support for running YOLO/DarkNet has been added to OpenCV dnn module recently.
  ### sample output :
  ![](object-detection.jpg)
  
+ ### sample cutted image :
+ ![](cutted-image.jpg)
+
  
  
