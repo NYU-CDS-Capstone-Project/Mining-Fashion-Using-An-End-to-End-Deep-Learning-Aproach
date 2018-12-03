@@ -1,0 +1,27 @@
+The number of parameters RESNET152 - ImageNet (1000 outputs): 11689512
+The number of parameters RESNET152 - Custom (4 outputs): 11691564
+Loaded trained model: /scratch/rw2268/Handbag_brand/snapshot/resnet152/0009.pth!
+/home/rw2268/.conda/envs/nlp/lib/python3.6/site-packages/torch/cuda/__init__.py:114: UserWarning: 
+    Found GPU0 Tesla V100-SXM2-16GB which requires CUDA_VERSION >= 9000 for
+     optimal performance and fast startup time, but your PyTorch was compiled
+     with CUDA_VERSION 8000. Please install the correct PyTorch binary
+     using instructions from http://pytorch.org
+    
+  warnings.warn(incorrect_binary_warn % (d, name, 9000, CUDA_VERSION))
+!RESNET152 -> [TRAIN] Epoch: 9:   0%|          | 0/132 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 151, in <module>
+    train(config, train_loader, val_loader, model)
+  File "main.py", line 88, in train
+    solver(config.model, train_loader, model, epoch, optimizer=config.optimizer, mode='train')
+  File "main.py", line 55, in solver
+    output = model(data)
+  File "/home/rw2268/.conda/envs/nlp/lib/python3.6/site-packages/torch/nn/modules/module.py", line 491, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rw2268/.local/lib/python3.6/site-packages/torchvision/models/resnet.py", line 139, in forward
+    x = self.conv1(x)
+  File "/home/rw2268/.conda/envs/nlp/lib/python3.6/site-packages/torch/nn/modules/module.py", line 491, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/rw2268/.conda/envs/nlp/lib/python3.6/site-packages/torch/nn/modules/conv.py", line 301, in forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: CUDNN_STATUS_EXECUTION_FAILED
