@@ -1,14 +1,4 @@
-# Object detection using pre-trained yolov3 with OpenCV 
-
-OpenCV `dnn` module supports running inference on pre-trained deep learning models from popular frameworks like Caffe, Torch and TensorFlow. 
-
-Support for running YOLO/DarkNet has been added to OpenCV dnn module recently. 
-
- ## Dependencies
-  * opencv
-  * numpy
-  
-`pip install numpy opencv-python`
+# Handbag Detection and Brand Recognition
 
  ## YOLO (You Only Look Once)
  
@@ -18,13 +8,13 @@ Support for running YOLO/DarkNet has been added to OpenCV dnn module recently.
  
  All the files are in the current directory, command below will apply object detection on the input image `bag.jpg`.
  
- `$ python detect.py --image bag.jpg --config handbag-tiny.cfg --weights handbag-tiny_5000.weights --classes handbag.names`
+ `$ python detectcut.py --image bag.jpg --config handbag-tiny.cfg --weights handbag-tiny_5000.weights --classes handbag.names`
  
  `detectandcut.py` helps cut out the bounding box from an image, which is ready for further classification.
  
  **Command format** 
  
- _$ python yolo_opencv.py --image /path/to/input/image --config /path/to/config/file --weights /path/to/weights/file --classes /path/to/classes/file_
+ _$ python detectcut.py --image /path/to/input/image --config /path/to/config/file --weights /path/to/weights/file --classes /path/to/classes/file_
  
  ### sample input:
  ![](bag.jpg)
