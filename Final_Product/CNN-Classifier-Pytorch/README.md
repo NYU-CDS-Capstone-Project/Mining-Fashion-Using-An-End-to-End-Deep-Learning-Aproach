@@ -26,3 +26,22 @@ kwargs:
 
 ### Misc
 It trains using pretrained weights from Imagenet. 
+
+### sample input (cutted image from yolo v3) :
+<img src="https://github.com/NYU-CDS-Capstone-Project/Fashion_Apparel_Detection/blob/master/Final_Product/yolov3/data/test/1/cutted-image.jpg"/>  
+
+### sample output :
+Label:
+- Louis_Vuitton
+- balenciaga
+- burberry
+- chloe
+- coach
+- givenchy
+- gucci
+- longchamp
+- michaelkors
+- prada
+- saint laurent
+- valentino
+- unknown
