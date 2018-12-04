@@ -16,18 +16,7 @@ Support for running YOLO/DarkNet has been added to OpenCV dnn module recently.
  
  After training the yolo model on about 2000 handbag images for 5000 epochs, we have the pre-trained weights file: handbag-tiny_5000.weights. 
  
- All the files are in the current directory, command below will apply object detection on the input image `bag.jpg`.
- 
- `$ python detect.py --image bag.jpg --config handbag-tiny.cfg --weights handbag-tiny_5000.weights --classes handbag.names`
- 
- `detectandcut.py` helps cut out the bounding box from an image, which is ready for further classification. It will finally output the image with bounding box and the brand name on it.
- 
  **Command format** 
  
- _$ python yolo_opencv.py --image /path/to/input/image --config /path/to/config/file --weights /path/to/weights/file --classes /path/to/classes/file_
+ _$ python detect.py --image /path/to/input/image --config /path/to/config/file --weights /path/to/weights/file --classes /path/to/classes/file_
  
- ### sample input:
- ![](bag.jpg)
- 
- ### sample cutted image :
-  <img src="https://github.com/NYU-CDS-Capstone-Project/Fashion_Apparel_Detection/blob/master/Final_Product/yolov3/data/test/1/cutted-image.jpg"/>  
