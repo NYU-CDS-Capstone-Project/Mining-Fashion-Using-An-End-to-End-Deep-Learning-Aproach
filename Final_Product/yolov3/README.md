@@ -29,5 +29,5 @@ Support for running YOLO/DarkNet has been added to OpenCV dnn module recently.
  ### sample input:
  ![](bag.jpg)
  
-  ### sample cutted image :
+ ### sample cutted image :
   <img src="https://github.com/NYU-CDS-Capstone-Project/Fashion_Apparel_Detection/blob/master/Final_Product/yolov3/data/test/1/cutted-image.jpg"/>  
