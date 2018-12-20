@@ -38,6 +38,6 @@ Fourth Stage:
 
 Fifth Stage:
 - [x] Construct the whole pipeline which is able to localize the handbag in the input image and then detect the speicifc brand of the handbag.
-- [ ] Test the whole pipeline on Hearst Handbag dataset.
+- [x] Test the whole pipeline on Hearst Handbag dataset.
 
 
